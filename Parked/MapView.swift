@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MapKit
+import CoreLocation
 
 struct MapView: UIViewRepresentable {
     
@@ -39,8 +40,6 @@ struct MapView: UIViewRepresentable {
         
         view.setRegion(region, animated: true)
         view.isScrollEnabled = scrollEnabled
-        
-        
     }
 }
 
@@ -58,4 +57,6 @@ class TruckMapAnnotation: NSObject, MKAnnotation {
     init(coordinate: CLLocationCoordinate2D) {
         self.coordinate = coordinate
     }
+    
+    
 }

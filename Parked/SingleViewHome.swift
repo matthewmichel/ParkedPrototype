@@ -58,7 +58,7 @@ struct SingleViewHome: View {
                                     NavigationLink(destination: TruckDetailView(truckObject: truck)) {
                                             //HorizontalScrollViewTruck(truckObject: truck)
                                         truckHorizontal(truck: truck)
-                                    }
+                                    }.buttonStyle(PlainButtonStyle())
                                 }
                             }
                         }
@@ -70,18 +70,8 @@ struct SingleViewHome: View {
                             HStack {
                                 ForEach(self.favoritesList) { truck in
                                     NavigationLink(destination: TruckDetailView(truckObject: truck)) {
-//                                            VStack(alignment: .leading) {
-//                                                truck.truckImage
-//                                                .resizable()
-//                                                .frame(width: 155, height: 155)
-//                                                self.cornerRadius(15)
-//                                                Text(truck.truckName)
-//                                                    .font(.caption)
-//                                            }.padding(.leading, 15)
                                         truckHorizontal(truck: truck)
-                                        
-                                        
-                                    }
+                                    }.buttonStyle(PlainButtonStyle())
                                     
                                 }
                             }

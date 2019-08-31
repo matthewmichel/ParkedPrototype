@@ -9,18 +9,45 @@
 import SwiftUI
 
 struct ContentView : View {
-    @State private var selection = 0
- 
+    
+    @State var yetToLogin: Bool = true
+    
     var body: some View {
-        TabbedView(selection: $selection){
-            Text("First View")
-                .font(.title)
-                .tabItemLabel(Image("first"))
-                .tag(0)
-            Text("Second View")
-                .font(.title)
-                .tabItemLabel(Image("second"))
-                .tag(1)
+        TabView {
+            //
+            // FIRST TAB *********************************************
+            //
+            TabOne().tabItem {
+                VStack{
+                    Image("first")
+                    Text("Home")
+                }
+            }
+            //
+            // END FIRST TAB *****************************************
+            //
+            
+            //
+            // SECOND TAB ********************************************
+            //
+            TabTwo().tabItem {
+                Image("second")
+            }
+            //
+            // END SECOND TAB*****************************************
+            //
+            
+            //
+            // THIRD TAB *********************************************
+            //
+            TabThree().tabItem {
+                Image("first")
+            }
+            //
+            // END OF THIRD TAB **************************************
+            //
+        }.sheet(isPresented: $yetToLogin) {
+            LoginScreen()
         }
     }
 }
@@ -32,3 +59,47 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+
+// TAB ONE
+struct TabOne: View {
+    var body: some View {
+        VStack {
+            Text("Welcome to Parked")
+                .fontWeight(.semibold)
+            Text("The Food Trucks Around You")
+                .fontWeight(.thin)
+        }
+    }
+    
+}
+
+// TAB TWO
+struct TabTwo: View {
+    var body: some View {
+        VStack {
+            Text("Around you map here.")
+        }
+    }
+}
+
+// TAB THREE
+struct TabThree: View {
+    
+    var body: some View {
+        testTruckList.AddToList(truck: testTruckList.truck1)
+        testTruckList.AddToList(truck: testTruckList.truck2)
+        testTruckList.AddToList(truck: testTruckList.truck3)
+        //currentTruckItemList = getTruckListFromDynamo()
+        
+        return NavigationView {
+            VStack {
+                List(testTruckList.truckItemList) { truckO in
+                    NavigationLink(destination: TruckDetailView(truckObject: truckO)) {
+                            TruckListRow(truckItem: truckO)
+                    }
+                }
+            }.navigationBarTitle("Around You")
+        }
+        
+    }
+}

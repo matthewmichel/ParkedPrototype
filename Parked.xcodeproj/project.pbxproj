@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A030673077E7E3A5EEB84731 /* Pods_Parked.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490D36112116AACB0A9132FF /* Pods_Parked.framework */; };
 		C406FEBF22FE13D1004C0F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406FEBE22FE13D1004C0F77 /* AppDelegate.swift */; };
 		C406FEC122FE13D1004C0F77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406FEC022FE13D1004C0F77 /* SceneDelegate.swift */; };
 		C406FEC322FE13D1004C0F77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406FEC222FE13D1004C0F77 /* ContentView.swift */; };
@@ -15,6 +16,18 @@
 		C406FECB22FE13D6004C0F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C406FEC922FE13D6004C0F77 /* LaunchScreen.storyboard */; };
 		C406FED622FE13D6004C0F77 /* ParkedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406FED522FE13D6004C0F77 /* ParkedTests.swift */; };
 		C406FEE122FE13D6004C0F77 /* ParkedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406FEE022FE13D6004C0F77 /* ParkedUITests.swift */; };
+		C406FEEF22FE1549004C0F77 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C406FEEE22FE1549004C0F77 /* awsconfiguration.json */; };
+		C406FEF122FE1573004C0F77 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406FEF022FE1573004C0F77 /* Truck.swift */; };
+		C4301440231A287300EA34DC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C430143F231A287300EA34DC /* AccountView.swift */; };
+		C4306F7A22FE7FE8001097B3 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4306F7922FE7FE8001097B3 /* GlobalModel.swift */; };
+		C446948823185A4F00DFD69F /* SingleViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = C446948723185A4F00DFD69F /* SingleViewHome.swift */; };
+		C45BBE842316294F0007BAA8 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BBE802316294E0007BAA8 /* CircleView.swift */; };
+		C45BBE852316294F0007BAA8 /* TruckListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BBE812316294F0007BAA8 /* TruckListRow.swift */; };
+		C45BBE862316294F0007BAA8 /* TruckDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BBE822316294F0007BAA8 /* TruckDetailView.swift */; };
+		C45BBE872316294F0007BAA8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BBE832316294F0007BAA8 /* MapView.swift */; };
+		C45BBE9223162AA80007BAA8 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BBE9123162AA80007BAA8 /* LoginScreen.swift */; };
+		C45BBE9423162C6A0007BAA8 /* SIWAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45BBE9323162C6A0007BAA8 /* SIWAButton.swift */; };
+		C4BC3B39231A48C700D1CBC2 /* truckHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC3B38231A48C700D1CBC2 /* truckHorizontal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		490D36112116AACB0A9132FF /* Pods_Parked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parked.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C83A9FBA1A2E5084EA8C6C5 /* Pods-Parked.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parked.release.xcconfig"; path = "Target Support Files/Pods-Parked/Pods-Parked.release.xcconfig"; sourceTree = "<group>"; };
 		C406FEBB22FE13D1004C0F77 /* Parked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C406FEBE22FE13D1004C0F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C406FEC022FE13D1004C0F77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,19 @@
 		C406FEDC22FE13D6004C0F77 /* ParkedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C406FEE022FE13D6004C0F77 /* ParkedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkedUITests.swift; sourceTree = "<group>"; };
 		C406FEE222FE13D6004C0F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C406FEEE22FE1549004C0F77 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		C406FEF022FE1573004C0F77 /* Truck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		C430143F231A287300EA34DC /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		C4306F7922FE7FE8001097B3 /* GlobalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
+		C446948723185A4F00DFD69F /* SingleViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewHome.swift; sourceTree = "<group>"; };
+		C45BBE802316294E0007BAA8 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		C45BBE812316294F0007BAA8 /* TruckListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckListRow.swift; sourceTree = "<group>"; };
+		C45BBE822316294F0007BAA8 /* TruckDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TruckDetailView.swift; sourceTree = "<group>"; };
+		C45BBE832316294F0007BAA8 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C45BBE9123162AA80007BAA8 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		C45BBE9323162C6A0007BAA8 /* SIWAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIWAButton.swift; sourceTree = "<group>"; };
+		C4BC3B38231A48C700D1CBC2 /* truckHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = truckHorizontal.swift; sourceTree = "<group>"; };
+		EA354F6752F35A6443C56988 /* Pods-Parked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parked.debug.xcconfig"; path = "Target Support Files/Pods-Parked/Pods-Parked.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A030673077E7E3A5EEB84731 /* Pods_Parked.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		337EEDF791FC6885CF1EDC9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA354F6752F35A6443C56988 /* Pods-Parked.debug.xcconfig */,
+				7C83A9FBA1A2E5084EA8C6C5 /* Pods-Parked.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C406FEB222FE13D1004C0F77 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				C406FED422FE13D6004C0F77 /* ParkedTests */,
 				C406FEDF22FE13D6004C0F77 /* ParkedUITests */,
 				C406FEBC22FE13D1004C0F77 /* Products */,
+				337EEDF791FC6885CF1EDC9C /* Pods */,
+				CD1FA6A8C60E9A2A8B30C9F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +139,16 @@
 		C406FEBD22FE13D1004C0F77 /* Parked */ = {
 			isa = PBXGroup;
 			children = (
+				C45BBE8D23162A3E0007BAA8 /* Actual Views */,
+				C45BBE8C23162A1A0007BAA8 /* Support Views */,
 				C406FEBE22FE13D1004C0F77 /* AppDelegate.swift */,
 				C406FEC022FE13D1004C0F77 /* SceneDelegate.swift */,
-				C406FEC222FE13D1004C0F77 /* ContentView.swift */,
 				C406FEC422FE13D6004C0F77 /* Assets.xcassets */,
 				C406FEC922FE13D6004C0F77 /* LaunchScreen.storyboard */,
 				C406FECC22FE13D6004C0F77 /* Info.plist */,
+				C406FEEE22FE1549004C0F77 /* awsconfiguration.json */,
+				C406FEF022FE1573004C0F77 /* Truck.swift */,
+				C4306F7922FE7FE8001097B3 /* GlobalModel.swift */,
 				C406FEC622FE13D6004C0F77 /* Preview Content */,
 			);
 			path = Parked;
@@ -136,6 +180,38 @@
 			path = ParkedUITests;
 			sourceTree = "<group>";
 		};
+		C45BBE8C23162A1A0007BAA8 /* Support Views */ = {
+			isa = PBXGroup;
+			children = (
+				C45BBE9323162C6A0007BAA8 /* SIWAButton.swift */,
+				C45BBE832316294F0007BAA8 /* MapView.swift */,
+				C45BBE822316294F0007BAA8 /* TruckDetailView.swift */,
+				C45BBE802316294E0007BAA8 /* CircleView.swift */,
+				C45BBE812316294F0007BAA8 /* TruckListRow.swift */,
+				C4BC3B38231A48C700D1CBC2 /* truckHorizontal.swift */,
+			);
+			name = "Support Views";
+			sourceTree = "<group>";
+		};
+		C45BBE8D23162A3E0007BAA8 /* Actual Views */ = {
+			isa = PBXGroup;
+			children = (
+				C406FEC222FE13D1004C0F77 /* ContentView.swift */,
+				C45BBE9123162AA80007BAA8 /* LoginScreen.swift */,
+				C446948723185A4F00DFD69F /* SingleViewHome.swift */,
+				C430143F231A287300EA34DC /* AccountView.swift */,
+			);
+			name = "Actual Views";
+			sourceTree = "<group>";
+		};
+		CD1FA6A8C60E9A2A8B30C9F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				490D36112116AACB0A9132FF /* Pods_Parked.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C406FEE522FE13D6004C0F77 /* Build configuration list for PBXNativeTarget "Parked" */;
 			buildPhases = (
+				59CF86E72DFE708C07CDD851 /* [CP] Check Pods Manifest.lock */,
 				C406FEB722FE13D1004C0F77 /* Sources */,
 				C406FEB822FE13D1004C0F77 /* Frameworks */,
 				C406FEB922FE13D1004C0F77 /* Resources */,
+				5843732C6AB876A1D133F6DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C406FECB22FE13D6004C0F77 /* LaunchScreen.storyboard in Resources */,
+				C406FEEF22FE1549004C0F77 /* awsconfiguration.json in Resources */,
 				C406FEC822FE13D6004C0F77 /* Preview Assets.xcassets in Resources */,
 				C406FEC522FE13D6004C0F77 /* Assets.xcassets in Resources */,
 			);
@@ -262,14 +341,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5843732C6AB876A1D133F6DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parked/Pods-Parked-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Parked/Pods-Parked-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Parked/Pods-Parked-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59CF86E72DFE708C07CDD851 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parked-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C406FEB722FE13D1004C0F77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C406FEBF22FE13D1004C0F77 /* AppDelegate.swift in Sources */,
+				C4BC3B39231A48C700D1CBC2 /* truckHorizontal.swift in Sources */,
+				C446948823185A4F00DFD69F /* SingleViewHome.swift in Sources */,
+				C45BBE872316294F0007BAA8 /* MapView.swift in Sources */,
 				C406FEC122FE13D1004C0F77 /* SceneDelegate.swift in Sources */,
+				C4301440231A287300EA34DC /* AccountView.swift in Sources */,
+				C4306F7A22FE7FE8001097B3 /* GlobalModel.swift in Sources */,
+				C45BBE842316294F0007BAA8 /* CircleView.swift in Sources */,
 				C406FEC322FE13D1004C0F77 /* ContentView.swift in Sources */,
+				C45BBE852316294F0007BAA8 /* TruckListRow.swift in Sources */,
+				C45BBE9423162C6A0007BAA8 /* SIWAButton.swift in Sources */,
+				C406FEF122FE1573004C0F77 /* Truck.swift in Sources */,
+				C45BBE862316294F0007BAA8 /* TruckDetailView.swift in Sources */,
+				C45BBE9223162AA80007BAA8 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +505,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -426,12 +559,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		C406FEE622FE13D6004C0F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA354F6752F35A6443C56988 /* Pods-Parked.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +574,7 @@
 				DEVELOPMENT_TEAM = DRF8H2T254;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Parked/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +588,7 @@
 		};
 		C406FEE722FE13D6004C0F77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C83A9FBA1A2E5084EA8C6C5 /* Pods-Parked.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +596,7 @@
 				DEVELOPMENT_TEAM = DRF8H2T254;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Parked/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
